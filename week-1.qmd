@@ -1,0 +1,193 @@
+---
+title: "Week 1"
+execute:
+  freeze: auto
+---
+
+## Agenda
+
+1. ~~Installation and requirements~~
+    * Installing R and RStudio/VS Code^[I prefer VS Code]
+      * Optional: Installing radian for the `vim` nerds
+    * What is Quarto?
+    * Quarto in VS Code, RStudio and Jupyter
+    * Exporting to `html`, `pdf`, `docx` examples
+
+1. ~~Introduction to Git and Github~~
+    * Basics of version control
+    * Github codespaces
+
+1. ~~Basics of Markdown and $\LaTeX$~~
+    * Sections
+    * Bullet Lists
+    * Numbered Lists
+    * Callouts
+    * Inline math, math equations
+    * Boxed, colored equations
+    * $\TeX$ macros for convenient shorthand
+    * More fancy stuff with `html` and `CSS`
+
+1. ~~Introduction to R~~
+    * Explanation of what R is and its history
+    * Setting up the R environment and installing necessary packages
+    * Package management with `renv`
+
+1. Basic data types and operations in R
+    * Explanation of the main data types in R (numeric, character, logical, etc.)
+    * Basic mathematical and logical operations
+    * Examples of working with vectors, matrices
+
+1. Importing and exporting data in R
+    * Explanation of different ways to import data into R (cs, txt, excel, etc.)
+    * Examples of importing data from different sources
+    * Explanation of different ways to export data from R (csv, txt, excel, etc.)
+    * Examples of exporting data to different sources
+
+1. Data Manipulation using `data.frame`
+    * Explanation of the main functions of data frames
+    * Examples of how to use dplyr to manipulate data using the iris dataset
+
+1. Data Visualization using base plot
+    * Explanation of the main features of ggplot2
+    * Creating simple plots using ggplot2
+    * Customizing plots with scales, labels, and themes
+    * Examples of creating different types of plots using ggplot2
+
+1. Q&A and Conclusion
+    * Allow time for questions and feedback
+    * Summarize the main points covered in the lecture and the key takeaways
+
+
+---
+
+# Basics of Markdown and $\LaTeX$
+
+## Subsections
+### subsubsections
+##### subsubsections
+
+Aute est duis sunt sunt officia. Pariatur adipisicing eiusmod deserunt Lorem nulla officia pariatur Lorem excepteur minim incididunt velit sint. Reprehenderit ad dolor ipsum. Eu dolore nostrud aliqua ex dolore pariatur incididunt aute pariatur sunt cillum. Proident qui velit nostrud cillum in ullamco sunt labore. Id eu aute voluptate occaecat dolore. Et est dolore aliqua mollit nostrud ea nisi ullamco non est adipisicing consectetur Lorem sint. Amet non cillum dolor ea culpa sunt nulla nulla.
+
+
+## Bullet Lists
+
+This is a list
+
+* Item 1
+* Item 2
+* Item 3
+* Item 4
+
+## Numbered Lists
+
+This is a list
+
+1. Item 1
+1. Item 2
+1. Item 3
+1. Item 4
+
+
+## Callouts
+
+::: {.callout-note}
+## This is the header for the note
+
+This is the body for the note
+:::
+
+
+
+::: {.callout-warning}
+## This is the header for the note
+
+This is the body for the note
+:::
+
+::: {.callout-danger}
+## This is the header for the note
+
+This is the body for the note
+:::
+
+
+## Inline math, math equations
+
+this is inline math `$...math formula...$` is going to render as follows: $y = \sum_{i=1}^n {mx + \alpha}$
+
+If you want math equations you use`$$...$$`
+
+$$
+y = \sum_{i=1}^n {mx + \alpha}
+$$
+
+some other examples
+
+[see here for more examples](https://quarto.org/docs/get-started/)
+
+
+
+## Boxed, colored equations
+
+If you want a boxed or a colored equation, you should look at the references. 
+
+
+$$
+\color{red}{y = \sum_{i=1}^n {mx + \alpha}}
+$$
+
+If you want text with color, you can use this format to see $\color{red}red$
+
+## $\TeX$ macros for convenient shorthand
+
+Another thing that's super useful about $\TeX$ are the macros. 
+
+::: {.callout-note}
+
+## Definition
+
+__Macro__ (*Noun*)
+
+_A macro is a convenient shorthand for a more complex piece of code._
+:::
+
+
+
+Let's say I plan to use this equation again and again
+$$
+y = \sum_{i=1}^n {mx + \alpha}
+$$
+
+
+I can just create a macro as follows:
+
+
+##### Go into math mode and use `\newcommand`
+$$
+\newcommand{\mymacro}{y = \sum_{i=1}^n {mx + \alpha}}
+$$
+
+Now I can do this:
+
+$\mymacro$
+
+and this:
+
+
+$$\mymacro$$
+$$\color{blue}\mymacro$$
+$$\color{orange}\mymacro$$
+
+There's a way to create footnotes as well:
+
+If I want to write text ^[this is a random thought I am going to include in the footnote] an not get digressed by random thoughts.
+
+
+
+
+# Basic data types and operations in R
+
+
+* Explanation of the main data types in R (numeric, character, logical, etc.)
+* Basic mathematical and logical operations
+* Examples of working with vectors, matrices

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.313">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Week 1</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="week-1_files/libs/clipboard/clipboard.min.js"></script>
+<script src="week-1_files/libs/quarto-html/quarto.js"></script>
+<script src="week-1_files/libs/quarto-html/popper.min.js"></script>
+<script src="week-1_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="week-1_files/libs/quarto-html/anchor.min.js"></script>
+<link href="week-1_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="week-1_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="week-1_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="week-1_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="week-1_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Week 1</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="agenda" class="level2">
+<h2 class="anchored" data-anchor-id="agenda">Agenda</h2>
+<ol type="1">
+<li><del>Installation and requirements</del>
+<ul>
+<li>Installing R and RStudio/VS Code<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+<ul>
+<li>Optional: Installing radian for the <code>vim</code> nerds</li>
+</ul></li>
+<li>What is Quarto?</li>
+<li>Quarto in VS Code, RStudio and Jupyter</li>
+<li>Exporting to <code>html</code>, <code>pdf</code>, <code>docx</code> examples</li>
+</ul></li>
+<li><del>Introduction to Git and Github</del>
+<ul>
+<li>Basics of version control</li>
+<li>Github codespaces</li>
+</ul></li>
+<li><del>Basics of Markdown and <span class="math inline">\(\LaTeX\)</span></del>
+<ul>
+<li>Sections</li>
+<li>Bullet Lists</li>
+<li>Numbered Lists</li>
+<li>Callouts</li>
+<li>Inline math, math equations</li>
+<li>Boxed, colored equations</li>
+<li><span class="math inline">\(\TeX\)</span> macros for convenient shorthand</li>
+<li>More fancy stuff with <code>html</code> and <code>CSS</code></li>
+</ul></li>
+<li><del>Introduction to R</del>
+<ul>
+<li>Explanation of what R is and its history</li>
+<li>Setting up the R environment and installing necessary packages</li>
+<li>Package management with <code>renv</code></li>
+</ul></li>
+<li>Basic data types and operations in R
+<ul>
+<li>Explanation of the main data types in R (numeric, character, logical, etc.)</li>
+<li>Basic mathematical and logical operations</li>
+<li>Examples of working with vectors, matrices</li>
+</ul></li>
+<li>Importing and exporting data in R
+<ul>
+<li>Explanation of different ways to import data into R (cs, txt, excel, etc.)</li>
+<li>Examples of importing data from different sources</li>
+<li>Explanation of different ways to export data from R (csv, txt, excel, etc.)</li>
+<li>Examples of exporting data to different sources</li>
+</ul></li>
+<li>Data Manipulation using <code>data.frame</code>
+<ul>
+<li>Explanation of the main functions of data frames</li>
+<li>Examples of how to use dplyr to manipulate data using the iris dataset</li>
+</ul></li>
+<li>Data Visualization using base plot
+<ul>
+<li>Explanation of the main features of ggplot2</li>
+<li>Creating simple plots using ggplot2</li>
+<li>Customizing plots with scales, labels, and themes</li>
+<li>Examples of creating different types of plots using ggplot2</li>
+</ul></li>
+<li>Q&amp;A and Conclusion
+<ul>
+<li>Allow time for questions and feedback</li>
+<li>Summarize the main points covered in the lecture and the key takeaways</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="basics-of-markdown-and-latex" class="level1">
+<h1>Basics of Markdown and <span class="math inline">\(\LaTeX\)</span></h1>
+<section id="subsections" class="level2">
+<h2 class="anchored" data-anchor-id="subsections">Subsections</h2>
+<section id="subsubsections" class="level3">
+<h3 class="anchored" data-anchor-id="subsubsections">subsubsections</h3>
+<section id="subsubsections-1" class="level5">
+<h5 class="anchored" data-anchor-id="subsubsections-1">subsubsections</h5>
+<p>Aute est duis sunt sunt officia. Pariatur adipisicing eiusmod deserunt Lorem nulla officia pariatur Lorem excepteur minim incididunt velit sint. Reprehenderit ad dolor ipsum. Eu dolore nostrud aliqua ex dolore pariatur incididunt aute pariatur sunt cillum. Proident qui velit nostrud cillum in ullamco sunt labore. Id eu aute voluptate occaecat dolore. Et est dolore aliqua mollit nostrud ea nisi ullamco non est adipisicing consectetur Lorem sint. Amet non cillum dolor ea culpa sunt nulla nulla.</p>
+</section>
+</section>
+</section>
+<section id="bullet-lists" class="level2">
+<h2 class="anchored" data-anchor-id="bullet-lists">Bullet Lists</h2>
+<p>This is a list</p>
+<ul>
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ul>
+</section>
+<section id="numbered-lists" class="level2">
+<h2 class="anchored" data-anchor-id="numbered-lists">Numbered Lists</h2>
+<p>This is a list</p>
+<ol type="1">
+<li>Item 1</li>
+<li>Item 2</li>
+<li>Item 3</li>
+<li>Item 4</li>
+</ol>
+</section>
+<section id="callouts" class="level2">
+<h2 class="anchored" data-anchor-id="callouts">Callouts</h2>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+This is the header for the note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is the body for the note</p>
+</div>
+</div>
+<div class="callout-warning callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+This is the header for the note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is the body for the note</p>
+</div>
+</div>
+<div class="callout-danger callout callout-style-default no-icon callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+This is the header for the note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>This is the body for the note</p>
+</div>
+</div>
+</section>
+<section id="inline-math-math-equations" class="level2">
+<h2 class="anchored" data-anchor-id="inline-math-math-equations">Inline math, math equations</h2>
+<p>this is inline math <code>$...math formula...$</code> is going to render as follows: <span class="math inline">\(y = \sum_{i=1}^n {mx + \alpha}\)</span></p>
+<p>If you want math equations you use<code>$$...$$</code></p>
+<p><span class="math display">\[
+y = \sum_{i=1}^n {mx + \alpha}
+\]</span></p>
+<p>some other examples</p>
+<p><a href="https://quarto.org/docs/get-started/">see here for more examples</a></p>
+</section>
+<section id="boxed-colored-equations" class="level2">
+<h2 class="anchored" data-anchor-id="boxed-colored-equations">Boxed, colored equations</h2>
+<p>If you want a boxed or a colored equation, you should look at the references.</p>
+<p><span class="math display">\[
+\color{red}{y = \sum_{i=1}^n {mx + \alpha}}
+\]</span></p>
+<p>If you want text with color, you can use this format to see <span class="math inline">\(\color{red}red\)</span></p>
+</section>
+<section id="tex-macros-for-convenient-shorthand" class="level2">
+<h2 class="anchored" data-anchor-id="tex-macros-for-convenient-shorthand"><span class="math inline">\(\TeX\)</span> macros for convenient shorthand</h2>
+<p>Another thing that’s super useful about <span class="math inline">\(\TeX\)</span> are the macros.</p>
+<div class="callout-note callout callout-style-default callout-captioned">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-caption-container flex-fill">
+Definition
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>Macro</strong> (<em>Noun</em>)</p>
+<p><em>A macro is a convenient shorthand for a more complex piece of code.</em></p>
+</div>
+</div>
+<p>Let’s say I plan to use this equation again and again <span class="math display">\[
+y = \sum_{i=1}^n {mx + \alpha}
+\]</span></p>
+<p>I can just create a macro as follows:</p>
+<section id="go-into-math-mode-and-use-newcommand" class="level5">
+<h5 class="anchored" data-anchor-id="go-into-math-mode-and-use-newcommand">Go into math mode and use <code>\newcommand</code></h5>
+<p><span class="math display">\[
+\newcommand{\mymacro}{y = \sum_{i=1}^n {mx + \alpha}}
+\]</span></p>
+<p>Now I can do this:</p>
+<p><span class="math inline">\(\mymacro\)</span></p>
+<p>and this:</p>
+<p><span class="math display">\[\mymacro\]</span> <span class="math display">\[\color{blue}\mymacro\]</span> <span class="math display">\[\color{orange}\mymacro\]</span></p>
+<p>There’s a way to create footnotes as well:</p>
+<p>If I want to write text <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> an not get digressed by random thoughts.</p>
+</section>
+</section>
+</section>
+<section id="basic-data-types-and-operations-in-r" class="level1">
+<h1>Basic data types and operations in R</h1>
+<ul>
+<li>Explanation of the main data types in R (numeric, character, logical, etc.)</li>
+<li>Basic mathematical and logical operations</li>
+<li>Examples of working with vectors, matrices</li>
+</ul>
+</section>
+
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>I prefer VS Code<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>this is a random thought I am going to include in the footnote<a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>

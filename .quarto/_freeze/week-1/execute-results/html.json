@@ -1,0 +1,16 @@
+{
+  "hash": "50034a7ef995797fe10cdeba40f9ad69",
+  "result": {
+    "markdown": "---\ntitle: \"week-1\"\ntitle-block-banner: true\ntitle-block-banner-color: \"magenta\"\ntitle-block-categories: true\n---\n\n\n## Agenda\n\nQuarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.\n\n\n::: {.cell}\n\n```{.r .cell-code}\nrenv::activate()\nlibrary(dplyr)\n```\n\n::: {.cell-output .cell-output-stderr}\n```\n\nAttaching package: 'dplyr'\n```\n:::\n\n::: {.cell-output .cell-output-stderr}\n```\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n```\n:::\n\n::: {.cell-output .cell-output-stderr}\n```\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n```\n:::\n\n```{.r .cell-code}\nx <- c(1,2,3)\ndf <- data.frame(x = rnorm(100), y=rnorm(100))\ndf %>% summary()\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n       x                   y           \n Min.   :-2.524315   Min.   :-2.08891  \n 1st Qu.:-0.693314   1st Qu.:-0.74793  \n Median :-0.004674   Median :-0.02857  \n Mean   :-0.052932   Mean   :-0.00931  \n 3rd Qu.: 0.571045   3rd Qu.: 0.66729  \n Max.   : 2.389123   Max.   : 2.44966  \n```\n:::\n:::\n",
+    "supporting": [
+      "week-1_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
